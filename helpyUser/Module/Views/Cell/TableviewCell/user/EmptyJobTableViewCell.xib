@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="301" id="KGk-i7-Jjw" customClass="EmptyJobTableViewCell" customModule="helpyUser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="509" height="301"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="509" height="301"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYc-eU-B2B">
+                        <rect key="frame" x="0.0" y="0.0" width="509" height="282"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fh-a3-hLj">
+                                <rect key="frame" x="20" y="103" width="469" height="169"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HouseCleaning" translatesAutoresizingMaskIntoConstraints="NO" id="6ce-ha-ozR">
+                                        <rect key="frame" x="23" y="-70" width="423" height="169"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="6ce-ha-ozR" secondAttribute="height" multiplier="2.5:1" id="NOg-D4-Baj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not anyone apply for jobs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8G-To-b97">
+                                        <rect key="frame" x="98.5" y="109" width="272.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="App_SemiBackground_Color"/>
+                                <constraints>
+                                    <constraint firstItem="6ce-ha-ozR" firstAttribute="top" secondItem="6fh-a3-hLj" secondAttribute="top" constant="-70" id="J3x-ca-BlS"/>
+                                    <constraint firstItem="M8G-To-b97" firstAttribute="centerX" secondItem="6fh-a3-hLj" secondAttribute="centerX" id="QU3-WZ-6hg"/>
+                                    <constraint firstItem="M8G-To-b97" firstAttribute="top" secondItem="6ce-ha-ozR" secondAttribute="bottom" constant="10" id="RQJ-OE-JLS"/>
+                                    <constraint firstItem="6ce-ha-ozR" firstAttribute="centerX" secondItem="6fh-a3-hLj" secondAttribute="centerX" id="Sxv-pv-9Mq"/>
+                                    <constraint firstItem="6ce-ha-ozR" firstAttribute="height" secondItem="6fh-a3-hLj" secondAttribute="height" id="W8Y-uQ-p4f"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6fh-a3-hLj" firstAttribute="height" secondItem="ZYc-eU-B2B" secondAttribute="height" multiplier="0.6" id="5uM-l9-OUz"/>
+                            <constraint firstAttribute="trailing" secondItem="6fh-a3-hLj" secondAttribute="trailing" constant="20" id="D4Y-O5-wuw"/>
+                            <constraint firstAttribute="width" secondItem="ZYc-eU-B2B" secondAttribute="height" multiplier="812:450" id="I31-Wo-2Kx"/>
+                            <constraint firstItem="6fh-a3-hLj" firstAttribute="centerX" secondItem="ZYc-eU-B2B" secondAttribute="centerX" id="JgW-xQ-7sw"/>
+                            <constraint firstAttribute="bottom" secondItem="6fh-a3-hLj" secondAttribute="bottom" constant="10" id="Oiu-7Z-sO1"/>
+                            <constraint firstItem="6fh-a3-hLj" firstAttribute="leading" secondItem="ZYc-eU-B2B" secondAttribute="leading" constant="20" id="Zgg-BC-k9h"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZYc-eU-B2B" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="BXs-ZR-czq"/>
+                    <constraint firstItem="ZYc-eU-B2B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Bdc-dD-EXJ"/>
+                    <constraint firstAttribute="bottom" secondItem="ZYc-eU-B2B" secondAttribute="bottom" id="Bog-Oc-aOw"/>
+                    <constraint firstItem="ZYc-eU-B2B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KRT-2Q-oET"/>
+                    <constraint firstItem="ZYc-eU-B2B" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vKJ-vo-E4V"/>
+                    <constraint firstAttribute="trailing" secondItem="ZYc-eU-B2B" secondAttribute="trailing" id="woc-xG-ZdL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="TitleView" destination="6fh-a3-hLj" id="jZn-Bc-aQt"/>
+                <outlet property="imgEmptyJob" destination="6ce-ha-ozR" id="BBd-Rp-ifr"/>
+                <outlet property="lblTitle" destination="M8G-To-b97" id="V13-mJ-GYY"/>
+            </connections>
+            <point key="canvasLocation" x="274.63768115942031" y="155.02232142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="HouseCleaning" width="920" height="445"/>
+        <namedColor name="App_SemiBackground_Color">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

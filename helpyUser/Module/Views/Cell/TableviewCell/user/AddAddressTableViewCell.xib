@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="121" id="KGk-i7-Jjw" customClass="AddAddressTableViewCell" customModule="helpyUser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="121"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ews-HX-kGF">
+                        <rect key="frame" x="0.0" y="0.0" width="376" height="120"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SA6-0y-C6n">
+                                <rect key="frame" x="20" y="10" width="225.5" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEf-Zw-Jhu">
+                                        <rect key="frame" x="10" y="40" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="UEf-Zw-Jhu" secondAttribute="height" multiplier="1:1" id="Mko-mA-aqT"/>
+                                        </constraints>
+                                        <state key="normal" image="Check_mark"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KVU-Yo-7a0">
+                                        <rect key="frame" x="40" y="10" width="175.5" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rahul Parmar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yF-IR-3j9">
+                                                <rect key="frame" x="0.0" y="0.0" width="175.5" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <color key="textColor" name="App_Navyblue_Color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+91 78******59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEJ-Lo-DRz">
+                                                <rect key="frame" x="0.0" y="40" width="175.5" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="App_Red_Color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abJ-vA-sFP">
+                                        <rect key="frame" x="185.5" y="35" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="55O-yS-oq5"/>
+                                            <constraint firstAttribute="width" secondItem="abJ-vA-sFP" secondAttribute="height" id="vfR-w4-04e"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_edit"/>
+                                        <connections>
+                                            <action selector="btnEditTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="41P-Xf-Hdp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="App_SemiBackground_Color"/>
+                                <constraints>
+                                    <constraint firstItem="KVU-Yo-7a0" firstAttribute="top" secondItem="SA6-0y-C6n" secondAttribute="top" constant="10" id="Bj8-i6-SYU"/>
+                                    <constraint firstItem="abJ-vA-sFP" firstAttribute="centerY" secondItem="SA6-0y-C6n" secondAttribute="centerY" id="Cit-nR-Bx0"/>
+                                    <constraint firstItem="KVU-Yo-7a0" firstAttribute="leading" secondItem="UEf-Zw-Jhu" secondAttribute="trailing" constant="10" id="LnD-bj-mb3"/>
+                                    <constraint firstItem="KVU-Yo-7a0" firstAttribute="centerY" secondItem="SA6-0y-C6n" secondAttribute="centerY" id="W47-aj-pxj"/>
+                                    <constraint firstAttribute="bottom" secondItem="KVU-Yo-7a0" secondAttribute="bottom" constant="10" id="blp-wm-SKF"/>
+                                    <constraint firstItem="UEf-Zw-Jhu" firstAttribute="leading" secondItem="SA6-0y-C6n" secondAttribute="leading" constant="10" id="gGj-Bn-PRK"/>
+                                    <constraint firstItem="UEf-Zw-Jhu" firstAttribute="centerY" secondItem="SA6-0y-C6n" secondAttribute="centerY" id="gV4-ew-Rbd"/>
+                                    <constraint firstItem="UEf-Zw-Jhu" firstAttribute="height" secondItem="SA6-0y-C6n" secondAttribute="height" multiplier="0.2" id="h0b-N3-NdB"/>
+                                    <constraint firstAttribute="trailing" secondItem="KVU-Yo-7a0" secondAttribute="trailing" constant="10" id="lSb-NV-xR9"/>
+                                    <constraint firstAttribute="trailing" secondItem="abJ-vA-sFP" secondAttribute="trailing" constant="10" id="uFk-XV-Rgk"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbQ-bN-3e5">
+                                <rect key="frame" x="276" y="20" width="80" height="80"/>
+                                <color key="backgroundColor" name="App_Navyblue_Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HbQ-bN-3e5" secondAttribute="height" multiplier="1:1" id="9Nh-rH-ozv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" name="App_White_Color"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSaveTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hTu-x5-qjJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SA6-0y-C6n" firstAttribute="width" secondItem="ews-HX-kGF" secondAttribute="width" multiplier="0.6" id="HSl-zK-Co9"/>
+                            <constraint firstItem="HbQ-bN-3e5" firstAttribute="height" secondItem="SA6-0y-C6n" secondAttribute="height" multiplier="0.8" id="Sxk-J3-hZS"/>
+                            <constraint firstItem="SA6-0y-C6n" firstAttribute="centerY" secondItem="ews-HX-kGF" secondAttribute="centerY" id="Ted-DW-d6h"/>
+                            <constraint firstItem="SA6-0y-C6n" firstAttribute="leading" secondItem="ews-HX-kGF" secondAttribute="leading" constant="20" id="URG-xe-J3o"/>
+                            <constraint firstItem="HbQ-bN-3e5" firstAttribute="centerY" secondItem="ews-HX-kGF" secondAttribute="centerY" id="XKW-oF-s80"/>
+                            <constraint firstItem="HbQ-bN-3e5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SA6-0y-C6n" secondAttribute="trailing" constant="15" id="YPU-3B-WwI"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SA6-0y-C6n" secondAttribute="bottom" constant="10" id="eU9-64-bis"/>
+                            <constraint firstAttribute="trailing" secondItem="HbQ-bN-3e5" secondAttribute="trailing" constant="20" id="phD-MM-Q40"/>
+                            <constraint firstAttribute="height" constant="120" id="r4D-2G-41I"/>
+                            <constraint firstItem="SA6-0y-C6n" firstAttribute="top" secondItem="ews-HX-kGF" secondAttribute="top" constant="10" id="yig-aO-h25"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ews-HX-kGF" secondAttribute="trailing" id="CvM-CL-M5a"/>
+                    <constraint firstAttribute="bottom" secondItem="ews-HX-kGF" secondAttribute="bottom" id="Daa-zb-bSY"/>
+                    <constraint firstItem="ews-HX-kGF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PMY-by-NDX"/>
+                    <constraint firstItem="ews-HX-kGF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vMy-Ip-8db"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="AddressView" destination="SA6-0y-C6n" id="cGZ-kv-4yY"/>
+                <outlet property="btnCheck" destination="UEf-Zw-Jhu" id="7av-Yf-Zxw"/>
+                <outlet property="btnSave" destination="HbQ-bN-3e5" id="oJ8-hX-2WJ"/>
+                <outlet property="lblNumber" destination="jEJ-Lo-DRz" id="SZ9-nV-ki7"/>
+                <outlet property="lblUserName" destination="4yF-IR-3j9" id="gYd-9e-UyR"/>
+            </connections>
+            <point key="canvasLocation" x="-98.550724637681171" y="124.88839285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Check_mark" width="80" height="80"/>
+        <image name="ic_edit" width="83" height="83"/>
+        <namedColor name="App_Navyblue_Color">
+            <color red="0.11400000005960464" green="0.18400000035762787" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="App_Red_Color">
+            <color red="1" green="0.0" blue="0.030999999493360519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="App_SemiBackground_Color">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="App_White_Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

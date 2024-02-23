@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="211" id="KGk-i7-Jjw" customClass="NewOrderAddonTableViewCell" customModule="helpyUser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="525" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="525" height="211"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRc-3G-hzm">
+                        <rect key="frame" x="10" y="10" width="505" height="191"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zOY-YU-QcG">
+                                <rect key="frame" x="20" y="15" width="41.5" height="46"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJA-Ev-W9e">
+                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hk6-JL-bTE">
+                                        <rect key="frame" x="0.0" y="25.5" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Kib-Te-ZYv">
+                                <rect key="frame" x="455" y="80.5" width="30" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uP1-5I-IzX">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" name="App_Navyblue_Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="uP1-5I-IzX" secondAttribute="height" multiplier="1:1" id="DTh-bn-ePV"/>
+                                            <constraint firstAttribute="height" constant="30" id="KCa-Xo-5Z4"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" image="ic_minus"/>
+                                        <connections>
+                                            <action selector="btnRemoveTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="OWn-Ce-uyf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="App_SemiBackground_Color"/>
+                        <constraints>
+                            <constraint firstItem="Kib-Te-ZYv" firstAttribute="centerY" secondItem="JRc-3G-hzm" secondAttribute="centerY" id="5Zf-gk-wNU"/>
+                            <constraint firstAttribute="trailing" secondItem="Kib-Te-ZYv" secondAttribute="trailing" constant="20" id="CyT-e1-MPt"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Kib-Te-ZYv" secondAttribute="bottom" constant="15" id="SiQ-pO-Njd"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zOY-YU-QcG" secondAttribute="bottom" constant="10" id="VRO-fG-axb"/>
+                            <constraint firstItem="Kib-Te-ZYv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zOY-YU-QcG" secondAttribute="trailing" constant="10" id="XYv-9B-AcG"/>
+                            <constraint firstItem="zOY-YU-QcG" firstAttribute="leading" secondItem="JRc-3G-hzm" secondAttribute="leading" constant="20" id="Zjr-kT-Eop"/>
+                            <constraint firstItem="Kib-Te-ZYv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JRc-3G-hzm" secondAttribute="top" constant="15" id="xvi-82-xm0"/>
+                            <constraint firstItem="zOY-YU-QcG" firstAttribute="top" secondItem="JRc-3G-hzm" secondAttribute="top" constant="15" id="zrm-Jn-rwV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JRc-3G-hzm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="3Fd-BJ-Sed"/>
+                    <constraint firstItem="JRc-3G-hzm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4fp-O1-c0e"/>
+                    <constraint firstAttribute="bottom" secondItem="JRc-3G-hzm" secondAttribute="bottom" constant="10" id="F6d-1S-Muq"/>
+                    <constraint firstAttribute="trailing" secondItem="JRc-3G-hzm" secondAttribute="trailing" constant="10" id="bns-RD-ZuT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="PriceLabel" destination="hk6-JL-bTE" id="cCA-Pk-4OC"/>
+                <outlet property="btnRemove" destination="uP1-5I-IzX" id="dCV-6i-6Sr"/>
+                <outlet property="mainView" destination="JRc-3G-hzm" id="lSu-Ro-SGE"/>
+                <outlet property="titleLabel" destination="vJA-Ev-W9e" id="EBK-fg-AQj"/>
+            </connections>
+            <point key="canvasLocation" x="286.23188405797106" y="171.76339285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_minus" width="60" height="60"/>
+        <namedColor name="App_Navyblue_Color">
+            <color red="0.11400000005960464" green="0.18400000035762787" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="App_SemiBackground_Color">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

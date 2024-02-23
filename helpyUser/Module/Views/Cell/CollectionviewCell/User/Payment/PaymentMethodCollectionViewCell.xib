@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PaymentMethodCollectionViewCell" customModule="helpyUser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="179" height="168"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="179" height="168"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkN-2c-HOg">
+                        <rect key="frame" x="0.0" y="0.0" width="179" height="168"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Av9-CT-Dzl" customClass="UIControl">
+                                <rect key="frame" x="22.5" y="17" width="134" height="134"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9N-uI-qL8">
+                                        <rect key="frame" x="119" y="-5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="RfJ-gf-kRE"/>
+                                            <constraint firstAttribute="width" secondItem="P9N-uI-qL8" secondAttribute="height" multiplier="1:1" id="xsd-MD-suW"/>
+                                        </constraints>
+                                        <state key="normal" image="Check_mark"/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_debitcard" translatesAutoresizingMaskIntoConstraints="NO" id="OnP-m4-GVj">
+                                        <rect key="frame" x="33.5" y="15" width="67" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="OnP-m4-GVj" secondAttribute="height" multiplier="1:1" id="xec-Ce-Qh8"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Debit Card" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeF-TY-dfC">
+                                        <rect key="frame" x="0.0" y="92" width="134" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="3Sc-Mx-YXi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="App_SemiBackground_Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Av9-CT-Dzl" secondAttribute="height" multiplier="1:1" id="1Uy-XG-TJe"/>
+                                    <constraint firstItem="CeF-TY-dfC" firstAttribute="top" secondItem="OnP-m4-GVj" secondAttribute="bottom" constant="10" id="ETk-RU-6hE"/>
+                                    <constraint firstAttribute="trailing" secondItem="CeF-TY-dfC" secondAttribute="trailing" id="KL8-L2-oMx"/>
+                                    <constraint firstAttribute="trailing" secondItem="P9N-uI-qL8" secondAttribute="trailing" constant="-5" id="KXU-Zd-NlP"/>
+                                    <constraint firstItem="CeF-TY-dfC" firstAttribute="leading" secondItem="Av9-CT-Dzl" secondAttribute="leading" id="Nce-Jc-L8c"/>
+                                    <constraint firstItem="P9N-uI-qL8" firstAttribute="top" secondItem="Av9-CT-Dzl" secondAttribute="top" constant="-5" id="Ped-D8-W0d"/>
+                                    <constraint firstItem="CeF-TY-dfC" firstAttribute="centerX" secondItem="Av9-CT-Dzl" secondAttribute="centerX" id="jRg-Nn-zgh"/>
+                                    <constraint firstItem="OnP-m4-GVj" firstAttribute="height" secondItem="Av9-CT-Dzl" secondAttribute="height" multiplier="0.5" id="rr9-Hf-S5w"/>
+                                    <constraint firstItem="OnP-m4-GVj" firstAttribute="centerX" secondItem="Av9-CT-Dzl" secondAttribute="centerX" id="sTf-xE-sOf"/>
+                                    <constraint firstAttribute="bottom" secondItem="CeF-TY-dfC" secondAttribute="bottom" constant="10" id="wEa-7t-sqF"/>
+                                    <constraint firstItem="OnP-m4-GVj" firstAttribute="top" secondItem="Av9-CT-Dzl" secondAttribute="top" constant="15" id="xTZ-mu-O3L"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Av9-CT-Dzl" firstAttribute="centerX" secondItem="qkN-2c-HOg" secondAttribute="centerX" id="NQ4-fA-q4g"/>
+                            <constraint firstItem="Av9-CT-Dzl" firstAttribute="height" secondItem="qkN-2c-HOg" secondAttribute="height" multiplier="0.8" id="VzN-lX-Ni4"/>
+                            <constraint firstItem="Av9-CT-Dzl" firstAttribute="centerY" secondItem="qkN-2c-HOg" secondAttribute="centerY" id="WvT-7q-Val"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qkN-2c-HOg" secondAttribute="trailing" id="3Dn-Jj-DTl"/>
+                <constraint firstItem="qkN-2c-HOg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3tB-vl-DLv"/>
+                <constraint firstAttribute="bottom" secondItem="qkN-2c-HOg" secondAttribute="bottom" id="Nj6-E8-qnT"/>
+                <constraint firstItem="qkN-2c-HOg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jaM-M0-UMd"/>
+            </constraints>
+            <size key="customSize" width="179" height="168"/>
+            <connections>
+                <outlet property="btnCheck" destination="P9N-uI-qL8" id="XBj-ot-gPU"/>
+                <outlet property="imgmethod" destination="OnP-m4-GVj" id="grk-UV-r1g"/>
+                <outlet property="lblmethodName" destination="CeF-TY-dfC" id="Zus-Eu-WFk"/>
+                <outlet property="mainview" destination="qkN-2c-HOg" id="iQL-I9-F79"/>
+                <outlet property="methodView" destination="Av9-CT-Dzl" id="Kiu-8I-KTx"/>
+            </connections>
+            <point key="canvasLocation" x="234.05797101449278" y="127.90178571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Check_mark" width="80" height="80"/>
+        <image name="ic_debitcard" width="138.5" height="95"/>
+        <namedColor name="App_SemiBackground_Color">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

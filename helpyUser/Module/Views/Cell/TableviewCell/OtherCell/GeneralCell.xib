@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GeneralCell" customModule="Helpy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bbn-a2-wte">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnB-7N-ppy">
+                                <rect key="frame" x="10" y="15.5" width="13" height="13"/>
+                                <state key="normal" image="Polygon "/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="bHi-oZ-Oul">
+                                <rect key="frame" x="28" y="12" width="217" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhe-fo-m3j">
+                                <rect key="frame" x="250" y="5" width="60" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="AnS-di-S9i"/>
+                                </constraints>
+                                <state key="normal" title="View All"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bHi-oZ-Oul" firstAttribute="leading" secondItem="dnB-7N-ppy" secondAttribute="trailing" constant="5" id="6O6-Qg-HUs"/>
+                            <constraint firstItem="dnB-7N-ppy" firstAttribute="leading" secondItem="Bbn-a2-wte" secondAttribute="leading" constant="10" id="8db-yS-oyE"/>
+                            <constraint firstItem="bhe-fo-m3j" firstAttribute="leading" secondItem="bHi-oZ-Oul" secondAttribute="trailing" constant="5" id="Apa-sZ-CbM"/>
+                            <constraint firstAttribute="trailing" secondItem="bhe-fo-m3j" secondAttribute="trailing" constant="10" id="Rlf-Yk-Fgg"/>
+                            <constraint firstItem="dnB-7N-ppy" firstAttribute="width" secondItem="Bbn-a2-wte" secondAttribute="height" multiplier="3:10" id="W1J-3S-6th"/>
+                            <constraint firstItem="bhe-fo-m3j" firstAttribute="top" secondItem="Bbn-a2-wte" secondAttribute="top" constant="5" id="Y8G-Ba-cia"/>
+                            <constraint firstAttribute="bottom" secondItem="bhe-fo-m3j" secondAttribute="bottom" constant="5" id="aQ1-hH-7KS"/>
+                            <constraint firstItem="dnB-7N-ppy" firstAttribute="height" secondItem="Bbn-a2-wte" secondAttribute="height" multiplier="0.3" id="ddl-xJ-mT0"/>
+                            <constraint firstItem="dnB-7N-ppy" firstAttribute="centerY" secondItem="Bbn-a2-wte" secondAttribute="centerY" id="e7i-cM-9Ht"/>
+                            <constraint firstItem="bHi-oZ-Oul" firstAttribute="centerY" secondItem="dnB-7N-ppy" secondAttribute="centerY" id="n4h-Uu-4S7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Bbn-a2-wte" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="1Ke-OZ-tIm"/>
+                    <constraint firstAttribute="trailing" secondItem="Bbn-a2-wte" secondAttribute="trailing" id="4LM-RA-AXS"/>
+                    <constraint firstItem="Bbn-a2-wte" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5Ut-KT-vVP"/>
+                    <constraint firstItem="Bbn-a2-wte" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Hua-8k-5Bc"/>
+                    <constraint firstAttribute="bottom" secondItem="Bbn-a2-wte" secondAttribute="bottom" id="feJ-ev-6J2"/>
+                    <constraint firstItem="Bbn-a2-wte" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="80:11" id="xsT-UX-cLa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnViewAll" destination="bhe-fo-m3j" id="6uA-E4-1Wz"/>
+                <outlet property="lbltitle" destination="bHi-oZ-Oul" id="BDw-k0-i0k"/>
+            </connections>
+            <point key="canvasLocation" x="142" y="98"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Polygon " width="26" height="30"/>
+    </resources>
+</document>

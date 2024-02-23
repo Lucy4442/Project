@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="134" id="KGk-i7-Jjw" customClass="TrackContactTableViewCell" customModule="helpyUser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="136"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="136"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PX1-X3-061">
+                        <rect key="frame" x="10" y="10" width="326.5" height="136.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User" translatesAutoresizingMaskIntoConstraints="NO" id="JXW-Cp-B8k">
+                                <rect key="frame" x="10" y="10" width="70" height="116.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JXW-Cp-B8k" secondAttribute="height" multiplier="30:50" id="0ef-Ti-XSW"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4R8-OM-dz7">
+                                <rect key="frame" x="90" y="28" width="111.5" height="80.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helpy Provider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsS-zo-CVs">
+                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="App_Navyblue_Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsd-a4-bDI">
+                                        <rect key="frame" x="0.0" y="30.5" width="111.5" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" name="App_Navyblue_Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="App_SemiBackground_Color"/>
+                        <constraints>
+                            <constraint firstItem="JXW-Cp-B8k" firstAttribute="leading" secondItem="PX1-X3-061" secondAttribute="leading" constant="10" id="4Ln-i8-ZUh"/>
+                            <constraint firstItem="4R8-OM-dz7" firstAttribute="leading" secondItem="JXW-Cp-B8k" secondAttribute="trailing" constant="10" id="5Ws-52-x0E"/>
+                            <constraint firstItem="JXW-Cp-B8k" firstAttribute="width" secondItem="PX1-X3-061" secondAttribute="width" multiplier="0.214286" id="Erk-lD-2av"/>
+                            <constraint firstItem="JXW-Cp-B8k" firstAttribute="centerY" secondItem="PX1-X3-061" secondAttribute="centerY" id="NE7-kP-ypU"/>
+                            <constraint firstItem="4R8-OM-dz7" firstAttribute="centerY" secondItem="JXW-Cp-B8k" secondAttribute="centerY" id="QiU-PC-iAF"/>
+                            <constraint firstAttribute="bottom" secondItem="JXW-Cp-B8k" secondAttribute="bottom" constant="10" id="iag-R2-Nle"/>
+                            <constraint firstItem="JXW-Cp-B8k" firstAttribute="top" secondItem="PX1-X3-061" secondAttribute="top" constant="10" id="xUa-uf-ApA"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Gn-DD-bhE">
+                        <rect key="frame" x="346.5" y="10" width="39.5" height="136.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="h7D-dK-NNy">
+                                <rect key="frame" x="10.5" y="21.5" width="18.5" height="94"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGg-ZC-Ij5">
+                                        <rect key="frame" x="0.0" y="0.0" width="18.5" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="oGg-ZC-Ij5" secondAttribute="height" multiplier="22:21" id="6ig-w4-9ah"/>
+                                            <constraint firstAttribute="height" constant="18" id="CYP-4s-Vvk"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_Store"/>
+                                        <connections>
+                                            <action selector="StoreBtntapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="99d-vc-Zp0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gP7-56-iiS">
+                                        <rect key="frame" x="0.0" y="38" width="18.5" height="18"/>
+                                        <state key="normal" image="call"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6d-AP-ZFh">
+                                        <rect key="frame" x="0.0" y="76" width="18.5" height="18"/>
+                                        <state key="normal" image="Small_Message"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="App_SemiBackground_Color"/>
+                        <constraints>
+                            <constraint firstItem="h7D-dK-NNy" firstAttribute="centerX" secondItem="8Gn-DD-bhE" secondAttribute="centerX" id="4Pv-WN-0R0"/>
+                            <constraint firstItem="h7D-dK-NNy" firstAttribute="centerY" secondItem="8Gn-DD-bhE" secondAttribute="centerY" id="s6Q-ft-6fJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PX1-X3-061" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="6Wz-fL-3Uk"/>
+                    <constraint firstAttribute="bottom" secondItem="PX1-X3-061" secondAttribute="bottom" constant="10" id="9Kr-L3-tu8"/>
+                    <constraint firstItem="8Gn-DD-bhE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="RmK-LV-Bla"/>
+                    <constraint firstItem="8Gn-DD-bhE" firstAttribute="leading" secondItem="PX1-X3-061" secondAttribute="trailing" constant="10" id="WLi-bb-hoa"/>
+                    <constraint firstItem="PX1-X3-061" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="jla-zo-yo4"/>
+                    <constraint firstItem="8Gn-DD-bhE" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.1" id="m6T-dC-7Ky"/>
+                    <constraint firstAttribute="trailing" secondItem="8Gn-DD-bhE" secondAttribute="trailing" constant="10" id="tL9-U5-XjJ"/>
+                    <constraint firstAttribute="bottom" secondItem="8Gn-DD-bhE" secondAttribute="bottom" constant="10" id="wI8-IE-0K5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonBackgroundView" destination="8Gn-DD-bhE" id="HJN-04-PN8"/>
+                <outlet property="callButton" destination="gP7-56-iiS" id="1wJ-yi-44p"/>
+                <outlet property="detailBackgroundView" destination="PX1-X3-061" id="Lf2-Vv-9ne"/>
+                <outlet property="messageButton" destination="l6d-AP-ZFh" id="wc5-Rf-eei"/>
+                <outlet property="mobileNumberLabel" destination="Nsd-a4-bDI" id="slj-Mc-UVq"/>
+                <outlet property="providerImageView" destination="JXW-Cp-B8k" id="p4F-o7-pCZ"/>
+                <outlet property="providerNameLabel" destination="NsS-zo-CVs" id="mF4-aE-llu"/>
+            </connections>
+            <point key="canvasLocation" x="-710.14492753623199" y="56.919642857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Small_Message" width="44" height="40.5"/>
+        <image name="User" width="206" height="275"/>
+        <image name="call" width="42" height="42"/>
+        <image name="ic_Store" width="44" height="37.5"/>
+        <namedColor name="App_Navyblue_Color">
+            <color red="0.11400000005960464" green="0.18400000035762787" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="App_SemiBackground_Color">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

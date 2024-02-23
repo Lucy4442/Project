@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="113" id="KGk-i7-Jjw" customClass="PickUpTimeTableViewCell" customModule="helpyUser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ma-dP-KgN">
+                        <rect key="frame" x="0.0" y="0.0" width="383" height="113"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ncm-WT-yyV">
+                                <rect key="frame" x="10" y="15" width="358" height="83"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6k-As-Z7a">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="83"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="bfP-Dx-m6P">
+                                                <rect key="frame" x="6.5" y="32.5" width="47" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <color key="textColor" name="App_Navyblue_Color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="6Mi-86-xkm"/>
+                                            <constraint firstItem="bfP-Dx-m6P" firstAttribute="centerX" secondItem="y6k-As-Z7a" secondAttribute="centerX" id="Bro-Gy-OVD"/>
+                                            <constraint firstItem="bfP-Dx-m6P" firstAttribute="centerY" secondItem="y6k-As-Z7a" secondAttribute="centerY" id="r6K-yu-zu7"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3X-1a-Ag5">
+                                        <rect key="frame" x="63" y="0.0" width="295" height="83"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="leK-C9-eDJ">
+                                                <rect key="frame" x="15" y="10" width="270" height="63"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick UP Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="SQQ-lf-YjG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="270" height="31.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                        <color key="textColor" name="App_Gray_Color"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09 AM - 11 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Lkc-Gk-KFQ">
+                                                        <rect key="frame" x="0.0" y="31.5" width="270" height="31.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" name="App_Gray_Color"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="App_SemiBackground_Color"/>
+                                        <constraints>
+                                            <constraint firstItem="leK-C9-eDJ" firstAttribute="top" secondItem="S3X-1a-Ag5" secondAttribute="top" constant="10" id="Vxa-nW-KMA"/>
+                                            <constraint firstAttribute="bottom" secondItem="leK-C9-eDJ" secondAttribute="bottom" constant="10" id="dGn-ue-WeY"/>
+                                            <constraint firstItem="leK-C9-eDJ" firstAttribute="leading" secondItem="S3X-1a-Ag5" secondAttribute="leading" constant="15" id="qpR-WH-M5J"/>
+                                            <constraint firstAttribute="trailing" secondItem="leK-C9-eDJ" secondAttribute="trailing" constant="10" id="vQF-fB-oXx"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ncm-WT-yyV" firstAttribute="top" secondItem="5Ma-dP-KgN" secondAttribute="top" constant="15" id="GOO-Pw-s2c"/>
+                            <constraint firstAttribute="bottom" secondItem="Ncm-WT-yyV" secondAttribute="bottom" constant="15" id="fJL-uk-r5b"/>
+                            <constraint firstAttribute="trailing" secondItem="Ncm-WT-yyV" secondAttribute="trailing" constant="15" id="iFk-ci-kH6"/>
+                            <constraint firstItem="Ncm-WT-yyV" firstAttribute="leading" secondItem="5Ma-dP-KgN" secondAttribute="leading" constant="10" id="iua-cE-s4a"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5Ma-dP-KgN" secondAttribute="trailing" id="2uS-nN-pgP"/>
+                    <constraint firstAttribute="bottom" secondItem="5Ma-dP-KgN" secondAttribute="bottom" id="5ip-UO-ZwR"/>
+                    <constraint firstItem="5Ma-dP-KgN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8IU-DJ-HhW"/>
+                    <constraint firstItem="5Ma-dP-KgN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bp5-gZ-eME"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblTime" destination="bfP-Dx-m6P" id="pX9-1y-1qv"/>
+                <outlet property="lblTimeIterval" destination="Lkc-Gk-KFQ" id="gfy-0l-dLl"/>
+                <outlet property="lbltitle" destination="SQQ-lf-YjG" id="vZL-LR-S6t"/>
+                <outlet property="timeView" destination="S3X-1a-Ag5" id="1cq-04-YCT"/>
+            </connections>
+            <point key="canvasLocation" x="-486" y="111"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="App_Gray_Color">
+            <color red="0.33700001239776611" green="0.41999998688697815" blue="0.50199997425079346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="App_Navyblue_Color">
+            <color red="0.11400000005960464" green="0.18400000035762787" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="App_SemiBackground_Color">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

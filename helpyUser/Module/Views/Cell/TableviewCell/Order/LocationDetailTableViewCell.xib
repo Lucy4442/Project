@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="LocationDetailTableViewCell" customModule="helpyUser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="482" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="482" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ftx-De-Pdp">
+                        <rect key="frame" x="0.0" y="0.0" width="482" height="87"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_Location-1" translatesAutoresizingMaskIntoConstraints="NO" id="MvV-cN-sIo">
+                                <rect key="frame" x="10" y="19.5" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MvV-cN-sIo" secondAttribute="height" multiplier="1:1" id="9GG-Q2-JGp"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="DEN-iC-lik">
+                                <rect key="frame" x="68" y="10" width="404" height="67"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rahul Parmar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlf-2O-AMz">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="App_Navyblue_Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Se4-ws-LHw">
+                                        <rect key="frame" x="0.0" y="26.5" width="404" height="40.5"/>
+                                        <string key="text">L/35, Parle Point, Somanath Society, Umra Gam,
+Athwa, Surat, Gujarat 395007</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" name="App_Gray_Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="App_White_Color"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DEN-iC-lik" secondAttribute="trailing" constant="10" id="7Uu-D9-BEY"/>
+                            <constraint firstItem="MvV-cN-sIo" firstAttribute="leading" secondItem="Ftx-De-Pdp" secondAttribute="leading" constant="10" id="UXs-yz-nH1"/>
+                            <constraint firstItem="MvV-cN-sIo" firstAttribute="width" secondItem="Ftx-De-Pdp" secondAttribute="width" multiplier="0.1" id="V8o-kW-EGL"/>
+                            <constraint firstItem="DEN-iC-lik" firstAttribute="leading" secondItem="MvV-cN-sIo" secondAttribute="trailing" constant="10" id="WBJ-X1-2iR"/>
+                            <constraint firstItem="DEN-iC-lik" firstAttribute="top" secondItem="Ftx-De-Pdp" secondAttribute="top" constant="10" id="ZTn-CP-9xE"/>
+                            <constraint firstItem="MvV-cN-sIo" firstAttribute="centerY" secondItem="Ftx-De-Pdp" secondAttribute="centerY" id="c2E-1b-tU2"/>
+                            <constraint firstAttribute="bottom" secondItem="DEN-iC-lik" secondAttribute="bottom" constant="10" id="kuh-rD-XYl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ftx-De-Pdp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CA9-8c-4f2"/>
+                    <constraint firstAttribute="trailing" secondItem="Ftx-De-Pdp" secondAttribute="trailing" id="QKH-fT-Y7e"/>
+                    <constraint firstItem="Ftx-De-Pdp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="REY-xM-Q2l"/>
+                    <constraint firstAttribute="bottom" secondItem="Ftx-De-Pdp" secondAttribute="bottom" id="SPe-cv-0OR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgLocation" destination="MvV-cN-sIo" id="nyQ-Ck-Gm8"/>
+                <outlet property="lblAddress" destination="Se4-ws-LHw" id="wsc-Rf-YnF"/>
+                <outlet property="lblName" destination="Tlf-2O-AMz" id="2Fj-sr-NwL"/>
+                <outlet property="mainView" destination="Ftx-De-Pdp" id="8xL-yA-viz"/>
+            </connections>
+            <point key="canvasLocation" x="257.97101449275362" y="103.45982142857143"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_Location-1" width="70.5" height="59.5"/>
+        <namedColor name="App_Gray_Color">
+            <color red="0.33700001239776611" green="0.41999998688697815" blue="0.50199997425079346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="App_Navyblue_Color">
+            <color red="0.11400000005960464" green="0.18400000035762787" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="App_White_Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

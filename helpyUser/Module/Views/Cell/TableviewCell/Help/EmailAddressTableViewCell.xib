@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="106" id="KGk-i7-Jjw" customClass="EmailAddressTableViewCell" customModule="helpyUser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="381" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rde-fq-Zbh">
+                        <rect key="frame" x="15" y="5" width="351" height="60"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NfR-6g-13x">
+                                <rect key="frame" x="10" y="0.0" width="341" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" name="App_SemiBackground_Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="2Fy-Mj-n0x"/>
+                            <constraint firstItem="NfR-6g-13x" firstAttribute="top" secondItem="rde-fq-Zbh" secondAttribute="top" id="3Zr-bT-Hog"/>
+                            <constraint firstAttribute="trailing" secondItem="NfR-6g-13x" secondAttribute="trailing" id="Sih-Bo-ilf"/>
+                            <constraint firstItem="NfR-6g-13x" firstAttribute="leading" secondItem="rde-fq-Zbh" secondAttribute="leading" constant="10" id="d53-OM-CAe"/>
+                            <constraint firstAttribute="bottom" secondItem="NfR-6g-13x" secondAttribute="bottom" id="ecW-r6-FPJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="rde-fq-Zbh" secondAttribute="bottom" constant="5" id="KgD-Sl-9tk"/>
+                    <constraint firstItem="rde-fq-Zbh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="NgZ-wB-CAq"/>
+                    <constraint firstAttribute="trailing" secondItem="rde-fq-Zbh" secondAttribute="trailing" constant="15" id="RdR-EG-e3z"/>
+                    <constraint firstItem="rde-fq-Zbh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="e2Z-Da-Kfp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="EmailAddressView" destination="rde-fq-Zbh" id="1Bv-mJ-em4"/>
+                <outlet property="txtEmailAddress" destination="NfR-6g-13x" id="od8-Cl-mDw"/>
+            </connections>
+            <point key="canvasLocation" x="184.78260869565219" y="116.51785714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="App_SemiBackground_Color">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="196" id="KGk-i7-Jjw" customClass="MenuTableViewCell" customModule="Helpy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBA-Lz-1eO">
+                        <rect key="frame" x="0.0" y="0.0" width="418" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4Y-Fc-RKb">
+                                <rect key="frame" x="21" y="10" width="376" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oX2-ji-AVT">
+                                        <rect key="frame" x="15" y="14.5" width="30" height="31.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWz-Ry-L9w">
+                                        <rect key="frame" x="55" y="18" width="311" height="24"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="RWz-Ry-L9w" firstAttribute="leading" secondItem="oX2-ji-AVT" secondAttribute="trailing" constant="10" id="0P7-vK-hsb"/>
+                                    <constraint firstAttribute="width" secondItem="R4Y-Fc-RKb" secondAttribute="height" multiplier="812:130" id="1iB-gy-Hx9"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="RWz-Ry-L9w" secondAttribute="trailing" constant="10" id="KBX-D8-Bc2"/>
+                                    <constraint firstItem="RWz-Ry-L9w" firstAttribute="centerY" secondItem="oX2-ji-AVT" secondAttribute="centerY" id="RiK-DR-35G"/>
+                                    <constraint firstItem="oX2-ji-AVT" firstAttribute="leading" secondItem="R4Y-Fc-RKb" secondAttribute="leading" constant="15" id="WWT-6y-PDY"/>
+                                    <constraint firstItem="oX2-ji-AVT" firstAttribute="centerY" secondItem="R4Y-Fc-RKb" secondAttribute="centerY" id="Wgj-RE-HUJ"/>
+                                    <constraint firstItem="oX2-ji-AVT" firstAttribute="height" secondItem="R4Y-Fc-RKb" secondAttribute="height" multiplier="0.525" id="tRA-CE-oYM"/>
+                                    <constraint firstItem="oX2-ji-AVT" firstAttribute="width" secondItem="R4Y-Fc-RKb" secondAttribute="height" multiplier="1:2" id="vUb-1O-0wm"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="R4Y-Fc-RKb" secondAttribute="bottom" constant="10" id="Gze-FU-Ctk"/>
+                            <constraint firstItem="R4Y-Fc-RKb" firstAttribute="centerX" secondItem="qBA-Lz-1eO" secondAttribute="centerX" id="aFH-Me-HOG"/>
+                            <constraint firstItem="R4Y-Fc-RKb" firstAttribute="centerY" secondItem="qBA-Lz-1eO" secondAttribute="centerY" id="aTv-6n-9BA"/>
+                            <constraint firstItem="R4Y-Fc-RKb" firstAttribute="width" secondItem="qBA-Lz-1eO" secondAttribute="width" multiplier="0.9" id="j1k-9q-hr3"/>
+                            <constraint firstItem="R4Y-Fc-RKb" firstAttribute="top" secondItem="qBA-Lz-1eO" secondAttribute="top" constant="10" id="zlV-ya-FaB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qBA-Lz-1eO" secondAttribute="trailing" id="0rX-gf-HUP"/>
+                    <constraint firstItem="qBA-Lz-1eO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="A9b-B5-kKp"/>
+                    <constraint firstItem="qBA-Lz-1eO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ibZ-Bo-NKs"/>
+                    <constraint firstAttribute="bottom" secondItem="qBA-Lz-1eO" secondAttribute="bottom" id="l3P-bk-PQy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="MenuImageView" destination="oX2-ji-AVT" id="UFE-Ap-2EW"/>
+                <outlet property="backgroundview" destination="R4Y-Fc-RKb" id="uTp-EW-Si8"/>
+                <outlet property="lblMenuName" destination="RWz-Ry-L9w" id="HBx-aG-GPX"/>
+            </connections>
+            <point key="canvasLocation" x="262.5" y="203.3450704225352"/>
+        </tableViewCell>
+    </objects>
+</document>
